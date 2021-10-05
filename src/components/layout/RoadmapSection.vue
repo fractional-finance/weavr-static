@@ -38,7 +38,7 @@
                 width="36" 
                 height="36" 
                 rx="5"
-                class="fill-f-purple-1 stroke-0"
+                class="fill-f-blue-1 stroke-0"
                 />
                 <rect 
                 x="2" y="2" 
