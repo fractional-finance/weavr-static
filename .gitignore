@@ -7,6 +7,7 @@ dist/
 .deploy*/
 src/_drafts
 package-lock.json
+yarn.lock
 
 # local env files
 .env.local
