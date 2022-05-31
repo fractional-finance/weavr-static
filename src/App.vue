@@ -1,16 +1,27 @@
 <template>
-  <div id="app" class="dark">
-    <AppWrapper/>
-  </div>
+  <Navbar/>
+  <router-view/>
+  <Footer/>
 </template>
 
 <script>
-import AppWrapper from "./components/AppWrapper";
-
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 export default {
-  name: 'App',
-  components: {
-    AppWrapper,
+components: {
+  Navbar,
+  Footer,
+},
+setup() {
+
+
+  return {
+   
   }
 }
+}
 </script>
+
+<style>
+
+</style>

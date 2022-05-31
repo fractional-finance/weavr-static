@@ -1,15 +1,12 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import store from './store'
-import VueYouTubeEmbed from 'vue-youtube-embed'
-import './styles/index.css'
+import VueClickAway from "vue3-click-away"
+import router from './router'
+import './assets/base.css'
 
-Vue.config.productionTip = false
-require('dotenv').config()
+const app = createApp(App)
 
-Vue.use(VueYouTubeEmbed)
+app.use(VueClickAway)
+app.use(router)
 
-new Vue({
-  store,
-  render: h => h(App),
-}).$mount('#app')
+app.mount('#app')
