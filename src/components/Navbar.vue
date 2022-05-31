@@ -7,7 +7,7 @@
       class="flex flex-col items-center max-w-screen-xl px-4 mx-auto md:items-center md:justify-between xl:flex-row md:px-6 lg:px-8"
     >
       <div class="p-4 flex flex-row items-center justify-between">
-        <a href="#" class=""><img src="../assets/frabric-logo.svg" alt="" /></a>
+        <router-link :to="{ name: 'Home' }"><img src="../assets/frabric-logo.svg" alt="Frabric Logo" /></router-link>
       </div>
       <nav
         class="w-full md:w-4/5 xl:w-2/5 flex flex-row items-center justify-between xl:justify-evenly text-xs xl:text-base font-body my-2"
@@ -27,12 +27,12 @@
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://app.gitbook.com/o/FeJyij3TaJCZ1uPDMagy/s/OmUjBV5GSeMyKyEeNy8r/whitepaper/introduction"
                 >Whitepaper</a
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://the-frabric.gitbook.io/thefrabric"
                 >FAQ</a
               >
             </div>
@@ -53,7 +53,7 @@
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://app.thefrabric.com/"
                 >Buy</a
               >
               <a
@@ -81,17 +81,17 @@
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://chat.thefrabric.com/"
                 >Forum</a
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://discord.gg/5ATNnF53vW"
                 >Discord</a
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="#"
+                href="https://gov.thefrabric.com/"
                 >Governance</a
               >
             </div>

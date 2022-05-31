@@ -10,12 +10,12 @@
     <div class="flex flex-col items-center xl:items-start">
       <p class="footer-link-headings">Explore</p>
       <a class="footer-links" href="#">Blog</a>
-      <a class="footer-links" href="#">Whitepaper</a>
+      <a class="footer-links" href="https://app.gitbook.com/o/FeJyij3TaJCZ1uPDMagy/s/OmUjBV5GSeMyKyEeNy8r/whitepaper/introduction">Whitepaper</a>
       <a class="footer-links mb-4" href="#">Documentation</a>
     </div>
     <div class="flex flex-col items-center xl:items-start">
       <p class="footer-link-headings">Governance</p>
-      <a class="footer-links" href="#">Forum</a>
+      <a class="footer-links" href="https://chat.thefrabric.com/">Forum</a>
       <a class="footer-links" href="#">Vote</a>
       <a class="footer-links" href="#">Proposals</a>
       <a class="footer-links mb-4" href="#">Community</a>
@@ -43,7 +43,7 @@
           class="w-5 md:w-10 md:mr-3"
         />
       </a>
-      <a href="#">
+      <a href="https://discord.gg/5ATNnF53vW">
         <img
           src="../assets/footer-discord.svg"
           alt="Join our Discord Community"
