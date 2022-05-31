@@ -13,7 +13,7 @@
         class="w-full md:w-4/5 xl:w-2/5 flex flex-row items-center justify-between xl:justify-evenly text-xs xl:text-base font-body my-2"
       >
         <div class="relative">
-          <a @click="handleAbout" class="" href="#">Blog</a>
+          <a @click="handleAbout" class="" href="#">About</a>
           <div
             v-if="aboutIsOpen"
             x-transition:enter="transition ease-out duration-100"
@@ -22,7 +22,7 @@
             x-transition:leave="transition ease-in duration-75"
             x-transition:leave-start="transform opacity-100 scale-100"
             x-transition:leave-end="transform opacity-0 scale-95"
-            class="absolute -left-7 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+            class="absolute -left-16 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
           >
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
               <a
