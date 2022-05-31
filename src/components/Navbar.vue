@@ -1,23 +1,152 @@
 <template>
-  <div class="header bg-[#1e1c25] w-screen mx-auto">
-    <header class="w-5/6 mx-auto py-7 pb-2 md:pb-4 flex flex-col xl:flex-row items-center justify-between overflow-hidden">
-      <img src="../assets/frabric-logo.svg" alt="frabric-logo" class="h-8 md:h-14 xl:h-10 w-auto"/>
-      <nav class="w-full md:w-4/5 xl:w-2/5 flex flex-row items-center justify-between xl:justify-evenly text-xs xl:text-base font-body my-2">
-        <a href="#" class="text-white ">About</a>
-        <a href="#" class="text-white ">Invest</a>
-        <a href="#" class="text-white ">Community</a>
+  <div
+    v-click-away="onClickAway"
+    class="w-full text-white bg-[#1e1c25] dark-mode:text-gray-200 dark-mode:bg-gray-800"
+  >
+    <div
+      class="flex flex-col items-center max-w-screen-xl px-4 mx-auto md:items-center md:justify-between xl:flex-row md:px-6 lg:px-8"
+    >
+      <div class="p-4 flex flex-row items-center justify-between">
+        <a href="#" class=""><img src="../assets/frabric-logo.svg" alt="" /></a>
+      </div>
+      <nav
+        class="w-full md:w-4/5 xl:w-2/5 flex flex-row items-center justify-between xl:justify-evenly text-xs xl:text-base font-body my-2"
+      >
+        <div class="relative">
+          <a @click="handleAbout" class="" href="#">Blog</a>
+          <div
+            v-if="aboutIsOpen"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+          >
+            <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Whitepaper</a
+              >
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >FAQ</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <a @click="handleInvest" class="" href="#">Invest</a>
+          <div
+            v-if="investIsOpen"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+          >
+            <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Buy</a
+              >
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Sell</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <a @click="handleCommunity" class="" href="#"
+            >Community</a
+          >
+          <div
+            v-if="communityIsOpen"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
+          >
+            <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Forum</a
+              >
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Discord</a
+              >
+              <a
+                class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="#"
+                >Governance</a
+              >
+            </div>
+          </div>
+        </div>
         <a href="#" class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md">Marketplace</a>
       </nav>
-    </header>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { ref } from "vue";
+export default {
+  setup() {
+    const aboutIsOpen = ref(false);
+    const investIsOpen = ref(false);
+    const communityIsOpen = ref(false);
+
+    const handleAbout = () => {
+      aboutIsOpen.value = !aboutIsOpen.value;
+      investIsOpen.value = false;
+      communityIsOpen.value = false;
+    };
+    const handleInvest = () => {
+      investIsOpen.value = !investIsOpen.value;
+      aboutIsOpen.value = false;
+      communityIsOpen.value = false;
+    };
+    const handleCommunity = () => {
+      communityIsOpen.value = !communityIsOpen.value;
+      aboutIsOpen.value = false;
+      investIsOpen.value = false;
+    };
+
+    const onClickAway = () => {
+      aboutIsOpen.value = false;
+      investIsOpen.value = false;
+      communityIsOpen.value = false;
+    };
+    return {
+      aboutIsOpen,
+      investIsOpen,
+      communityIsOpen,
+      handleAbout,
+      handleInvest,
+      handleCommunity,
+      onClickAway
+    };
+  },
+};
 </script>
 
 <style>
-.header{
+.header {
   width: 100%;
 }
 </style>
