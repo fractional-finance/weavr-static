@@ -19,14 +19,19 @@
           class="flex flex-row justify-between items-center mt-5 xl:mt-9 text-sm md:text-lg"
         >
           <a
-            href="#"
+            href="https://app.gitbook.com/o/FeJyij3TaJCZ1uPDMagy/s/OmUjBV5GSeMyKyEeNy8r/whitepaper/introduction"
             class="px-3 md:px-5 py-1.5 md:py-3 bg-[#5A50D8] rounded-sm mr-3"
-            >White Paper</a
+            >        
+              White Paper
+            </a
           >
           <a
             href="#"
             class="px-3 md:px-5 py-1.5 md:py-3 border-2 border-[#5A50D8] bg-[#1F1D25] rounded-sm ml-3"
-            >Marketplace</a
+            >
+            <router-link :to="{ name: 'wip'}">
+              Marketplace
+            </router-link></a
           >
         </div>
       </div>
@@ -117,7 +122,7 @@
           transactions, while relying on the Ethereum mainnet for security.
         </p>
         <a
-          href="#"
+          href="https://portal.arbitrum.one"
           class="px-4 md:px-6 lg:px-10 py-2 md:py-3.5 bg-[#5A50D8] rounded-sm md:text-xl xl:text-lg"
           >Learn More ></a
         >
