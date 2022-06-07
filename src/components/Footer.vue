@@ -3,7 +3,7 @@
   <div class="mt-6 font-body flex flex-col md:flex-row md:justify-evenly">
     <div class="flex flex-col items-center xl:items-start">
       <p class="footer-link-headings">Pages</p>
-      <a class="footer-links" href="#">Buy Property</a>
+      <router-link to="/wip" class="footer-links" target="_blank">Buy Property</router-link>
       <a
         class="footer-links"
         href="https://dkwnhnualcm.typeform.com/to/EzESZLnR
@@ -37,7 +37,7 @@
     <div class="flex flex-col items-center xl:items-start">
       <p class="footer-link-headings">Governance</p>
       <a class="footer-links" href="https://chat.thefrabric.com/" target="_blank">Forum</a>
-      <a class="footer-links" href="#">Vote</a>
+      <router-link class="footer-links" to="/wip" target="_blank">Vote</router-link>
     </div>
   </div>
   <div class="h-px w-4/5 m-auto bg-[#5A50D8] mt-5"></div>

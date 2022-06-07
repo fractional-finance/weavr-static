@@ -7,7 +7,7 @@
         <p class="text-md mt-2 xl:text-lg">
           We couldn’t find the page you’re looking for.
         </p>
-        <button class="px-4 py-2 bg-[#5A50D8] rounded-sm mt-3">Go Back</button>
+        <button @click="handleBack" class="px-4 py-2 bg-[#5A50D8] rounded-sm mt-3">Go Home</button>
       </div>
       <img
         src="../assets/not-found.svg"
@@ -19,7 +19,20 @@
 </template>
 
 <script>
-export default {};
+import { useRouter } from 'vue-router';
+export default {
+  setup() {
+    const router = useRouter();
+    const handleBack = () => {
+      router.push('/');
+    };
+
+    return {
+      handleBack,
+      router
+    };
+  }
+};
 </script>
 
 <style></style>

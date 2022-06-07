@@ -7,10 +7,10 @@
         <p class="text-md mt-2 xl:text-lg">
           We are sewing the content for you..
         </p>
-        <button class="px-4 py-2 bg-[#5A50D8] rounded-sm mt-3">Go Back</button>
+        <button @click="handleBack" class="px-4 py-2 bg-[#5A50D8] rounded-sm mt-3">Go Back</button>
       </div>
       <img
-        src="../assets/not-found.svg"
+        src="../assets/under-construction.png"
         alt="Page not found"
         class="w-3/4 mx-auto mt-4 md:w-2/5 xl:mr-3"
       />
@@ -19,7 +19,20 @@
 </template>
 
 <script>
-export default {};
+import { useRouter } from 'vue-router';
+export default {
+  setup() {
+    const router = useRouter();
+    const handleBack = () => {
+      router.back();
+    };
+
+    return {
+      handleBack,
+      router
+    };
+  }
+};
 </script>
 
 <style></style>
