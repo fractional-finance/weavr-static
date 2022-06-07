@@ -55,11 +55,11 @@
             class="absolute -left-16 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
           >
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
-              <a
+              <router-link
+                to="/wip"
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://app.thefrabric.com/"
                 target="_blank"
-                >Buy</a
+                >Buy</router-link
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -101,17 +101,20 @@
                 target="_blank"
                 >Discord</a
               >
-              <a
+              <router-link
+                to="/wip"
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://gov.thefrabric.com/"
                 target="_blank"
-                >Governance</a
+                >Governance</router-link
               >
             </div>
           </div>
         </div>
-        <a href="#" class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md"
-          >Marketplace</a
+        <router-link
+          to="/wip"
+          target = "_blank"
+          class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md"
+          >Marketplace</router-link
         >
       </nav>
     </div>

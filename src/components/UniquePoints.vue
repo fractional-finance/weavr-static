@@ -26,7 +26,4 @@ setup() {
 </script>
 
 <style scoped>
-.uniquepoints {
-    scrollbar-color: #5A50D8 #1C1A23;
-}
 </style>

@@ -12,8 +12,9 @@ const router = createRouter({
     },
     {
       path: '/wip',
-      name: "wip",
+      name: "Work In Progress",
       component: Wip    },
+      
     { path: '/:pathMatch(.*)*', name: 'Not-Found', component: NotFound }
   ]
 })

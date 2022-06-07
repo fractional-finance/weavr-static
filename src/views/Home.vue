@@ -28,7 +28,7 @@
             href="#"
             class="px-3 md:px-5 py-1.5 md:py-3 border-2 border-[#5A50D8] bg-[#1F1D25] rounded-sm ml-3"
             >
-            <router-link :to="{ name: 'wip'}">
+            <router-link :to="{ name: 'Work In Progress'}" target = "_blank">
               Marketplace
             </router-link></a
           >
@@ -107,7 +107,7 @@
       </div>
     </div>
     <div
-      class="w-5/6 m-auto mt-28 md:mt-40 xl:mt-40 xl:flex xl:justify-between"
+      class="w-5/6 m-auto mt-28 md:mt-40 xl:mt-48 xl:flex xl:justify-between"
     >
       <div
         class="rounded-3xl p-4 border-2 border-[#5A50D8] hidden md:block md:w-3/5 xl:w-2/6 md:mx-auto"
@@ -138,7 +138,7 @@
         >
       </div>
     </div>
-    <div
+    <!-- <div
       class="w-5/6 m-auto mt-5 md:mt-8 font-body bg-white text-black px-3.5 md:px-5 py-3 md:py-4 md:flex md:flex-col xl:flex-row md:items-center xl:justify-center rounded-lg"
     >
       <div class="xl:flex xl:flex-col xl:items-start xl:ml-14">
@@ -170,7 +170,8 @@
         alt="Subscribe to our newsletter"
         class="ml-14 md:ml-40 xl:ml-36 xl:-mr-28 -mt-6 md:-mt-20 xl:-mt-28"
       />
-    </div>
+    </div> -->
+   <iframe width="540" height="525" src="https://3a567f7a.sibforms.com/serve/MUIEAGQx7T-wtvSq_ZgppYcoGL_EhMhib4X8SjJhbe5tKHAT3T8_-VssK2tpbB45mIhFBfhwkgW1LiIouyQD03GEUoL4VR7x4U9JXWFhdBiTWBUa5IR6mTOZIWxnv1964sjZzI_swXwut-7QTeTnMtvrMnePnzvOVXB-_XyX3_729sjz94iV2JjJdw51x7u5WvwA2ELLJIP9R2G1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
   </div>
 </template>
 
