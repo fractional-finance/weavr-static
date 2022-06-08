@@ -29,7 +29,7 @@
             <div class="px-2 py-2 bg-[#1e1c25] rounded-md shadow">
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://app.gitbook.com/o/FeJyij3TaJCZ1uPDMagy/s/OmUjBV5GSeMyKyEeNy8r/whitepaper/introduction"
+                href="https://the-frabric.gitbook.io/thefrabric/whitepaper/introduction"
                 target="_blank"
                 >Whitepaper</a
               >
@@ -58,19 +58,16 @@
               <router-link
                 to="/wip"
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                target="_blank"
                 >Buy</router-link
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                 href="https://dkwnhnualcm.typeform.com/to/EzESZLnR"
-                target="_blank"
                 >Sell</a
               >
               <a
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                 href="https://dkwnhnualcm.typeform.com/to/ksJv35hX"
-                target="_blank"
                 >Fund</a
               >
             </div>
@@ -104,7 +101,6 @@
               <router-link
                 to="/wip"
                 class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                target="_blank"
                 >Governance</router-link
               >
             </div>
@@ -112,7 +108,6 @@
         </div>
         <router-link
           to="/wip"
-          target = "_blank"
           class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md"
           >Marketplace</router-link
         >
