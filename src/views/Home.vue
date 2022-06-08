@@ -138,7 +138,7 @@
         >
       </div>
     </div>
-    <!-- <div
+    <div
       class="w-5/6 m-auto mt-5 md:mt-8 font-body bg-white text-black px-3.5 md:px-5 py-3 md:py-4 md:flex md:flex-col xl:flex-row md:items-center xl:justify-center rounded-lg"
     >
       <div class="xl:flex xl:flex-col xl:items-start xl:ml-14">
@@ -154,12 +154,7 @@
         </p>
         <div class="flex flex-row justify-evenly mt-3 md:mt-6 text-sm">
           <a
-            href="#"
-            class="px-5 md:px-7 py-2 md:py-3 bg-[#34303D] rounded-sm md:rounded-md text-white md:text-xl xl:text-sm  xl:mr-4"
-            >Your email address</a
-          >
-          <a
-            href="#"
+            href="https://3a567f7a.sibforms.com/serve/MUIEAAkS53zR0h7rhxExKB1X1JotCHaM4o7FBy9qRH3V7h92zXfDojr8PpuqQVRtRIYoeLgWddoOz_IVgW3DofxtESXPIwfentMntmPtVWwU_sTQTpYSt6ESaeVmSheGFH20mDIsMgM1UbzffXQ9ghnsJl8wKxqmH0Lxs7_Ppe1Kd6CVHsywoa4e0jFJBCru4UTyeIdV_z53X2yd"
             class="px-5 md:px-7 py-2 md:py-3 bg-[#5A50D8] rounded-sm md:rounded-md text-white md:text-xl xl:text-sm"
             >Subscribe</a
           >
@@ -170,8 +165,8 @@
         alt="Subscribe to our newsletter"
         class="ml-14 md:ml-40 xl:ml-36 xl:-mr-28 -mt-6 md:-mt-20 xl:-mt-28"
       />
-    </div> -->
-   <iframe width="540" height="525" src="https://3a567f7a.sibforms.com/serve/MUIEAGQx7T-wtvSq_ZgppYcoGL_EhMhib4X8SjJhbe5tKHAT3T8_-VssK2tpbB45mIhFBfhwkgW1LiIouyQD03GEUoL4VR7x4U9JXWFhdBiTWBUa5IR6mTOZIWxnv1964sjZzI_swXwut-7QTeTnMtvrMnePnzvOVXB-_XyX3_729sjz94iV2JjJdw51x7u5WvwA2ELLJIP9R2G1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+    </div>
+<!--   <iframe width="580" height="525" src="https://3a567f7a.sibforms.com/serve/MUIEAGQx7T-wtvSq_ZgppYcoGL_EhMhib4X8SjJhbe5tKHAT3T8_-VssK2tpbB45mIhFBfhwkgW1LiIouyQD03GEUoL4VR7x4U9JXWFhdBiTWBUa5IR6mTOZIWxnv1964sjZzI_swXwut-7QTeTnMtvrMnePnzvOVXB-_XyX3_729sjz94iV2JjJdw51x7u5WvwA2ELLJIP9R2G1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>-->
   </div>
 </template>
 
