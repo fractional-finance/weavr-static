@@ -16,14 +16,6 @@ const router = createRouter({
       name: "Work In Progress",
       component: Wip
     },
-    {
-      path: '/burntcoat',
-      component: Wrapper,
-      name: 'Welcome to your first real estate token',
-      beforeEnter(to, from, next){
-        window.location.href="https://dkwnhnualcm.typeform.com/to/QObnRTbh";
-      }
-    },
       
     { path: '/:pathMatch(.*)*', name: 'Not-Found', component: NotFound }
   ]
