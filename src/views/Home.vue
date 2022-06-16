@@ -154,6 +154,7 @@
           <a
             href="https://3a567f7a.sibforms.com/serve/MUIEAAkS53zR0h7rhxExKB1X1JotCHaM4o7FBy9qRH3V7h92zXfDojr8PpuqQVRtRIYoeLgWddoOz_IVgW3DofxtESXPIwfentMntmPtVWwU_sTQTpYSt6ESaeVmSheGFH20mDIsMgM1UbzffXQ9ghnsJl8wKxqmH0Lxs7_Ppe1Kd6CVHsywoa4e0jFJBCru4UTyeIdV_z53X2yd"
             class="px-5 md:px-7 py-2 md:py-3 bg-[#5A50D8] rounded-sm md:rounded-md text-white md:text-xl xl:text-sm"
+            style="z-index: 999;"
             >Subscribe</a
           >
         </div>
