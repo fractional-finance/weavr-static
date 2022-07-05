@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/index.html"
-  to = "/wip"
-  status = 403
+  to = "www.google.com"
+  status = 301
   force = true
   query = {path = ":path"} #  apply this rule for /old-path?path=example
   conditions = {Country = ["US", "CA"]}
