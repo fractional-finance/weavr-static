@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "www.google.com"
-  status = 200
-  force = true
-  query = {path = ":path"} #  apply this rule for /old-path?path=example
-
