@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/index.html"
+  from = "/"
   to = "www.google.com"
   status = 301
   force = true
