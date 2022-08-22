@@ -24,7 +24,6 @@ export const store = reactive(
                 }else {
                     store.state.isAuthenticated = false
                 }
-                console.log(store.state.isAuthenticated);
             }
         }
     
