@@ -19,11 +19,6 @@ export const store = reactive(
         },
         action: {
             authenticate(hash) {
-                console.log("HASH: ", hash);
-                console.log("CONFIG: ", config);
-                console.log("BYTES: ", getBytes());
-                console.log(ethers.utils.id(getBytes()));
-                
                 if(hash == ethers.utils.id(getBytes())) {
                     store.state.isAuthenticated = true
                 }else {
