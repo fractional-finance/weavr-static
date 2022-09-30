@@ -26,15 +26,12 @@ const router = createRouter({
       name: 'Login',
       component: Login
     },
-<<<<<<< HEAD
     {
       path: '/gate',
       name: "Gate",
       component: Gate
     },
       
-=======
->>>>>>> abstrucked/login
     { path: '/:pathMatch(.*)*', name: 'Not-Found', component: NotFound }
   ]
 })
