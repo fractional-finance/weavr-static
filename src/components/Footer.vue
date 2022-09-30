@@ -44,11 +44,13 @@
   <div
     class="xl:w-5/6 xl:mx-auto mt-3 md:mt-5 flex flex-col xl:flex-row xl:justify-between mb-6"
   >
+  <div class="flex items-center text-5xl whitespace-pre">
     <img
-      src="../assets/footer-logo.png"
-      alt="Frabric Logo"
+      src="../assets/logo/new-logo.svg"
+      alt="Weavr Logo"
       class="w-4/12 md:w-1/5 mx-auto xl:mx-0 md:mb-3 xl:mb-0"
     />
+   <p> Weavr</p></div>
     <div class="flex justify-evenly md:justify-center items-center mt-3">
       <a href="https://twitter.com/Thefrabric" target="_blank">
         <img

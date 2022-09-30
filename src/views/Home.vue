@@ -43,7 +43,7 @@
       class="w-5/6 m-auto mt-6 md:mt-8 xl:mt-20 flex flex-col items-center font-body"
     >
       <p class="text-xl md:text-3xl xl:text-4xl font-medium text-center">
-        The Real Estate community for everyone
+        Real Estate membership community for everyone
       </p>
       <div
         class="h-px md:h-[2px] w-1/3 md:w-2/5 bg-[#5A50D8] mt-2 md:mt-4 xl:mt-8"
