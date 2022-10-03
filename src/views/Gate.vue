@@ -64,8 +64,15 @@
 </template>
 
 <script>
+import store from "../store";
+
 export default {
     name: "Gate",
+    methods: {
+        ...mapGetters({
+
+        })
+    }
 }
 </script>
 
