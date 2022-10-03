@@ -44,7 +44,7 @@
                 >Gain Access to our Marketplace</p>
                 <p
                     class="mt-3 md:mt-7 md:text-xl xl:text-lg md:text-center xl:text-left"
-                >Join our newsletter and learn to gain your access to Frabric</p>
+                >Join our newsletter and learn to gain your access Weavr</p>
                 <div class="flex flex-row justify-evenly mt-3 md:mt-6 text-sm">
                     <a
                         href="https://3a567f7a.sibforms.com/serve/MUIEAAkS53zR0h7rhxExKB1X1JotCHaM4o7FBy9qRH3V7h92zXfDojr8PpuqQVRtRIYoeLgWddoOz_IVgW3DofxtESXPIwfentMntmPtVWwU_sTQTpYSt6ESaeVmSheGFH20mDIsMgM1UbzffXQ9ghnsJl8wKxqmH0Lxs7_Ppe1Kd6CVHsywoa4e0jFJBCru4UTyeIdV_z53X2yd"
@@ -62,5 +62,11 @@
         <!--   <iframe width="580" height="525" src="https://3a567f7a.sibforms.com/serve/MUIEAGQx7T-wtvSq_ZgppYcoGL_EhMhib4X8SjJhbe5tKHAT3T8_-VssK2tpbB45mIhFBfhwkgW1LiIouyQD03GEUoL4VR7x4U9JXWFhdBiTWBUa5IR6mTOZIWxnv1964sjZzI_swXwut-7QTeTnMtvrMnePnzvOVXB-_XyX3_729sjz94iV2JjJdw51x7u5WvwA2ELLJIP9R2G1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>-->
     </div>
 </template>
+
+<script>
+export default {
+    name: "Gate",
+}
+</script>
 
 <style></style>
