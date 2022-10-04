@@ -1,31 +1,39 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
-import NotFound from "../views/NotFound.vue";
-import Wip from "../views/Wip.vue";
-import Gate from "../views/Gate.vue";
-import Wrapper from "../views/Wrapper.vue";
-import Login from "../views/Login.vue";
+import { createRouter, createWebHashHistory } from "vue-router";
+import Home from "../components/views/Home.vue";
+import NotFound from "../components/views/NotFound.vue";
+import Wip from "../components/views/Wip.vue";
+import Gate from "../components/views/Gate.vue";
+import Modal from "../components/views/modal/Modal.vue"
+import walletConnect from "../components/sections/WalletConnect.vue"
+import Wrapper from "../components/views/Wrapper.vue";
+import Login from "../components/views/Login.vue";
 import store from "../store";
+import { Whitelist } from "../whitelist";
 import { nextTick } from "vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: "/",
+      redirect: "/gate"
+    },
+    {
+      path: "/walletConnect",
+      component: Modal,
+      props: {component: walletConnect}
+    },
+    {
+      path: "/home",
       name: "Home",
-      component: Home,
+      component: Home
     },
     {
       path: "/wip",
       name: "Work In Progress",
       component: Wip,
     },
-    {
-      path: "/login",
-      name: "Login",
-      component: Login,
-    },
+    
     {
       path: "/gate",
       name: "Gate",

@@ -72,9 +72,9 @@ export default {
   opacity: 0;
   animation: fadeIn ease 1s forwards;
   animation-delay: 0.55s;
-  h3 {
+}
+.connect-container  h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-}
 </style>

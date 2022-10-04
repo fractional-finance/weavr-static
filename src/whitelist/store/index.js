@@ -1,4 +1,4 @@
-import { WHITELIST_COOKIES_KEY } from "../constants";
+import { WHITELIST_COOKIE_KEY } from "../constants";
 import { getCookie } from "../cookies";
 
 export function whitelistState() {

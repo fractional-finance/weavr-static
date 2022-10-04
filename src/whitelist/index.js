@@ -1,3 +1,4 @@
+// import { WhitelistPage } from ".";
 export { default as Whitelist } from "./service";
 
 export {
@@ -7,8 +8,8 @@ export {
   whitelistMutations,
 } from "./store";
 
-export { default as WhitelistPage } from "./page/Whitelist";
+export { default as WhitelistPage } from "./page/Whitelist.vue";
 
-export { WHITELIST_COOKIES_KEY } from "./constants";
+export { WHITELIST_COOKIE_KEY } from "./constants";
 
 export { setCookie, getCookie } from "./cookies";

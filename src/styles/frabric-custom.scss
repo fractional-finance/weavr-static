@@ -1,0 +1,174 @@
+@charset "utf-8";
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+
+$family-sans-serif: "Poppins Sans", "sans";
+
+
+//####################################
+//#          FRABRIC THEME           #
+//####################################
+
+// COLORS
+$darkBlue: #000044;
+$mediumBlue: #5A50D8;
+$lightBlue: #968EFF;
+$darkGray: #1D1B22;
+$mediumDarkGray: #27242e;
+$mediumGray: #8D8D8D;
+$lightGray: #CACACA;
+$white: #FFFFFF;
+$black: #13111A;
+$magenta: #D841DE;
+$mint: #00EDC4;
+$red: #FF3200;
+$cyan: #00BDFF;
+$darkBlue-invert: findColorInvert($darkBlue);
+$mediumBlue-invert: findColorInvert($mediumBlue);
+$lightBlue-invert: findColorInvert($lightBlue);
+$darkGray-invert: findColorInvert($darkGray);
+$mediumDarkGray-invert: findColorInvert($mediumDarkGray);
+$mediumGray-invert: findColorInvert($mediumGray);
+$lightGray-invert: findColorInvert($lightGray);
+$magenta-invert: findColorInvert($magenta);
+$mint-invert: findColorInvert($mint);
+$red-invert: findColorInver($red);
+$cyan-invert: findColorInver($cyan);
+
+// SCHEME SETUP
+$scheme-main: $black;
+$scheme-color: $lightGray;
+$text: $lightGray;
+
+$primary: $mediumBlue;
+$primary-invert: findColorInvert($primary);
+$danger: $lightBlue;
+
+$transparent: rgba(0, 0, 0, 0);
+
+// Setup the new serif family
+$family-primary: $family-sans-serif;
+
+// Components and tags Styling
+$input-color: $lightBlue;
+
+$strong-color: $white;
+$border-light: $mediumBlue;
+$scheme-main-bis: $danger;
+$navbar-item-active-color: #fff;
+$card-radius: 0.50rem;
+$tiny-radius: 5px;
+$small-radius: 10px;
+
+
+$modal-content-width: min(100%, 1000px);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  border: $mediumBlue solid 1px !important;
+}
+
+// RADIUS
+.has-radius-md {
+  border-radius: 0.50rem !important;
+}
+
+.has-radius-lg {
+  border-radius: 1rem !important;
+}
+
+//BORDER
+.has-border-bottom {
+  border-bottom: $white 1px solid !important;
+}
+
+.has-full-borders {
+  border: $white 1px solid !important;
+}
+
+.image {
+  &.is-250x250  {
+    width: 250px;
+    height: 250px;
+  }
+  &.is-350x350  {
+    width: 350px;
+    height: 350px;
+  }
+  &.is-400x400  {
+    width: 400px;
+    height: 400px;
+  }
+  &.is-450x450  {
+    width: 450px;
+    height: 450px;
+  }
+  &.is-500x500  {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+// Adding new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+  "darkBlue": ($darkBlue, $darkBlue-invert),
+  "mediumBlue": ($mediumBlue, $mediumBlue-invert),
+  "lightBlue": ($lightBlue, $lightBlue-invert),
+  "darkGray": ($darkGray, $darkGray-invert),
+  "mediumGray": ($mediumGray, $mediumGray-invert),
+  "mediumDarkGray": ($mediumDarkGray, $mediumDarkGray-invert),
+  "lightGray": ($lightGray, $lightGray-invert),
+  "transprent": ($transparent, $transparent),
+  "cyan": ($cyan, $cyan-invert),
+  "red": ($red, $red-invert),
+  "magenta": ($magenta, $magenta-invert),
+  "mint": ($mint, $mint-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// Importing the rest of Bulma
+@import "../../node_modules/bulma/bulma.sass";
+
+
+// Explicit Bulma class overrides
+
+.label {
+  color: white;
+}
+
+.textarea {
+  border-color: $mediumBlue;
+  min-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+
+  &:hover {
+    border-color: $mediumBlue;
+  }
+}
+
+.button {
+  border: none;
+  transition: all 150ms;
+
+  &:hover {
+    filter: contrast(140%);
+  }
+}
+
+.select {
+  display: block;
+  cursor: pointer;
+  outline: none !important;
+  border-color: $mediumBlue  !important;
+  border-radius: $tiny-radius;
+}
+
+
+@import "./markdown.scss";

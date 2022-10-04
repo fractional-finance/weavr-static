@@ -115,6 +115,7 @@
           class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md"
           >Marketplace</router-link
         >
+        
       </nav>
     </div>
   </div>

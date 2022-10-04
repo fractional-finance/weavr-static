@@ -22,7 +22,7 @@
 
 <script>
 import { useRouter } from 'vue-router';
-import {store } from '../store'
+import {store } from '../../store'
 export default {
   name: 'Login',
   methods: {

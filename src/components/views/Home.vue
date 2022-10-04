@@ -34,7 +34,7 @@
         </div>
       </div>
       <img
-        src="../assets/hero-image.svg"
+        src="../../assets/hero-image.svg"
         alt=""
         class="mt-5 w-3/4 md:w-3/5 xl:w-2/5"
       />
@@ -52,7 +52,7 @@
         class="xl:flex xl:flex-row xl:justify-around xl:items-center xl:mt-10 md:w-[87%] xl:w-full"
       >
         <img
-          src="../assets/for-buyers.svg"
+          src="../../assets/for-buyers.svg"
           alt="buyers"
           class="pr-14 md:pr-14 md:-mb-28 md:w-4/5 mt-4 -mb-8 xl:-mb-14 xl:w-2/5"
         />
@@ -71,7 +71,7 @@
         class="xl:flex xl:flex-row-reverse xl:justify-around xl:items-center md:mt-6 xl:mt-10 md:w-[87%] xl:w-full"
       >
         <img
-          src="../assets/for-builders.svg"
+          src="../../assets/for-builders.svg"
           alt="sellers"
           class="mt-4 mb-5 md:mb-5 w-3/5 mx-auto md:w-3/5 md:mx-auto xl:w-4/12"
         />
@@ -112,7 +112,7 @@
         class="rounded-3xl p-4 border-2 border-[#5A50D8] hidden md:block md:w-3/5 xl:w-2/6 md:mx-auto"
       >
         <img
-          src="../assets/arbitrum-network.png"
+          src="../../assets/arbitrum-network.png"
           alt="arbitrum network"
           class="rounded-2xl"
         />
@@ -172,8 +172,8 @@
 <script>
 import ForEveryone from "@/components/ForEveryone.vue";
 import UniquePoints from "@/components/UniquePoints.vue";
-import { forBuyers } from "../composables/forBuyers";
-import { forBuilders } from "../composables/forBuilders";
+import { forBuyers } from "../../composables/forBuyers";
+import { forBuilders } from "../../composables/forBuilders";
 export default {
   components: {
     ForEveryone,

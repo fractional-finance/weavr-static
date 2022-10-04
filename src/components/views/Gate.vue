@@ -1,7 +1,7 @@
 <template>
-    <div class>
+    <div class="container">
         <div
-            class="w-5/6 m-auto mt-6 xl:mt-20 flex flex-col xl:flex-row xl:justify-between items-center font-body"
+            class="w-5/6 m-auto mt-6 xl:mt-20 flex flex-col xl:flex-row xl:justify-between items-center font-body p-5"
         >
             <div class="flex flex-col items-center xl:items-start xl:w-2/5">
                 <p
@@ -21,16 +21,19 @@
                     class="flex flex-row justify-between items-center mt-5 xl:mt-9 text-sm md:text-lg"
                 >
                     <a
-                        href="#"
+                        @click="openConnectWalletPage"
                         class="px-3 md:px-5 py-1.5 md:py-3 bg-[#5A50D8] rounded-sm mr-3"
                     >Authenticate</a>
                 </div>
             </div>
-            <img src="../assets/hero-image.svg" alt class="mt-5 w-3/4 md:w-3/5 xl:w-2/5" />
+            <div class="image is-450x450">
+              <img src="../../assets/whitelist-img.png" :width="100" :height="100"/>
+            </div>
+            
         </div>
 
         <div
-            class="w-5/6 m-auto mt-5 md:mt-8 px-3.5 md:px-5 py-3 md:py-4 md:flex md:flex-col xl:flex-row md:items-center xl:justify-center"
+            class="w-5/6  mt-5 md:mt-8 px-3.5 md:px-5 py-3 md:py-4 md:flex md:flex-col xl:flex-row md:items-center xl:justify-center"
         >
             <p>Private Members Club, not open to the public</p>
         </div>
@@ -54,7 +57,7 @@
                 </div>
             </div>
             <img
-                src="../assets/envelope.svg"
+                src="../../assets/envelope.svg"
                 alt="Subscribe to our newsletter"
                 class="ml-14 md:ml-40 xl:ml-36 xl:-mr-28 -mt-6 md:-mt-20 xl:-mt-28"
             />
@@ -62,18 +65,67 @@
         <!--   <iframe width="580" height="525" src="https://3a567f7a.sibforms.com/serve/MUIEAGQx7T-wtvSq_ZgppYcoGL_EhMhib4X8SjJhbe5tKHAT3T8_-VssK2tpbB45mIhFBfhwkgW1LiIouyQD03GEUoL4VR7x4U9JXWFhdBiTWBUa5IR6mTOZIWxnv1964sjZzI_swXwut-7QTeTnMtvrMnePnzvOVXB-_XyX3_729sjz94iV2JjJdw51x7u5WvwA2ELLJIP9R2G1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>-->
     </div>
 </template>
-
 <script>
-import store from "../store";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
-    name: "Gate",
-    methods: {
-        ...mapGetters({
-
-        })
+  name: "Gate",
+  computed: {
+    ...mapGetters({
+      address: "userWalletAddress",
+      whitelisted: "isWhitelisted",
+    })
+  },
+  props: {
+    assetId: {
+      type: String,
+    },
+  },
+  methods: {
+    ...mapActions({
+      checkWhitelisted: "checkWhitelistStatus"
+    }),
+    openConnectWalletPage () {
+      this.$router.push("/walletConnect")
+    },
+    continueToHomepage () {
+      this.$router.push("/home");
     }
+  },
 }
 </script>
 
-<style></style>
+<style lang="css" scoped>
+/* @import "../../styles/_variables.sass";
+@import "../../styles/frabric-custom.scss"; */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  opacity: 0;
+  animation: fadeIn ease 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.connect-container {
+  opacity: 0;
+  animation: fadeIn ease 1s forwards;
+  animation-delay: 0.55s;
+}
+.connect-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  } 
+
+
+</style>
