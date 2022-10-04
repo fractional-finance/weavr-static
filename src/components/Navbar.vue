@@ -8,8 +8,12 @@
     >
       <div class="p-4 flex flex-row items-center justify-between">
         <router-link :to="{ name: 'Home' }"
-          ><img src="../assets/frabric-logo.svg" alt="Frabric Logo"
-        /></router-link>
+          >
+          <div class="flex items-center text-5xl whitespace-pre">
+          <img src="../assets/logo/new-logo.svg" alt="Weavr Logo"
+        />
+        <p> Weavr</p></div>
+        </router-link>
       </div>
       <nav
         class="w-full md:w-4/5 lg:w-3/5 xl:w-2/5 flex flex-row items-center justify-between xl:justify-evenly text-xs xl:text-base font-body my-2"
@@ -111,6 +115,7 @@
           class="px-6 xl:px-8 py-3 bg-[#5A50D8] text-white rounded-md"
           >Marketplace</router-link
         >
+        
       </nav>
     </div>
   </div>

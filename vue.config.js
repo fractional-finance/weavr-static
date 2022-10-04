@@ -1,5 +1,17 @@
+const path = require("path")
+const globalSassFiles = [
+
+]
 module.exports = {
-  publicPath: './',
+  publicPath: "./", 
+  css: {
+    requireModuleExtension: true,
+    loaderOptions: {
+      sass: {
+        additionalData: globalSassFiles.map((src)=>'@import "' + src + '";').join('\n')
+      }
+    }
+},
   chainWebpack: (config) => {
     config
       .plugin('html')

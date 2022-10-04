@@ -1,6 +1,6 @@
 <template>
-  <div class="h-px w-4/5 m-auto bg-[#5A50D8] mt-5"></div>
-  <div class="mt-6 font-body flex flex-col md:flex-row md:justify-evenly">
+  <div class="h-px w-4/5  bg-[#5A50D8] mt-5 container"></div>
+  <div class="container mt-6 font-body is-flex flex-col md:flex-row md:justify-evenly">
     <div class="flex flex-col items-center xl:items-start">
       <p class="footer-link-headings">Pages</p>
       <router-link to="/wip" class="footer-links" target="_blank">Buy Property</router-link>
@@ -40,31 +40,36 @@
       <router-link class="footer-links" to="/wip" target="_blank">Vote</router-link>
     </div>
   </div>
-  <div class="h-px w-4/5 m-auto bg-[#5A50D8] mt-5"></div>
+  <div class="container h-px w-4/5 m-auto bg-[#5A50D8] mt-5"></div>
   <div
     class="xl:w-5/6 xl:mx-auto mt-3 md:mt-5 flex flex-col xl:flex-row xl:justify-between mb-6"
   >
-    <img
-      src="../assets/footer-logo.png"
-      alt="Frabric Logo"
+  <div class="container is-flex items-center text-5xl whitespace-pre">
+   <div class="is-flex">
+    <div class="image">
+     <img
+      src="../assets/logo/new-logo.svg"
+      alt="Weavr Logo"
       class="w-4/12 md:w-1/5 mx-auto xl:mx-0 md:mb-3 xl:mb-0"
     />
-    <div class="flex justify-evenly md:justify-center items-center mt-3">
-      <a href="https://twitter.com/Thefrabric" target="_blank">
+   </div>
+    <p> Weavr</p></div>
+    <div class="px-5 is-flex is-align-self-flex-end is-justify-content-space-evenly w-100 mt-3">
+      <a class="image is-48x48" href="https://twitter.com/Thefrabric" target="_blank">
         <img
           src="../assets/footer-twitter.svg"
           alt="Follow us on Twitter"
           class="w-5 md:w-10 md:mr-3"
         />
       </a>
-      <a href="https://github.com/fractional-finance" target="_blank">
+      <a class="image is-48x48" href="https://github.com/fractional-finance" target="_blank">
         <img
           src="../assets/footer-github.svg"
           alt="Check us out at Github"
           class="w-5 md:w-10 md:mr-3"
         />
       </a>
-      <a href="https://discord.gg/5ATNnF53vW" target="_blank">
+      <a class="image is-48x48" href="https://discord.gg/5ATNnF53vW" target="_blank">
         <img
           src="../assets/footer-discord.svg"
           alt="Join our Discord Community"
@@ -72,6 +77,9 @@
         />
       </a>
     </div>
+   </div>
+   
+    
   </div>
 </template>
 
